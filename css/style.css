@@ -1,0 +1,326 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*?estilo de los enlaces*/
+a {
+    text-decoration: none;
+    color: white !important;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+p {
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+h1 {
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+h2 {
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+h5 {
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+
+
+/*!header*/
+
+
+
+
+/*?estilo de header*/
+
+
+.navbar{
+    background-image: url(../img/espacio_luna.png);
+    background-size: cover;
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%);
+}
+
+
+/*?estilo lista de navegacion*/
+
+
+/*?Estilos para los elementos de la lista*/
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*?Estilos para los enlaces de la listas*/
+
+header ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    color: white;
+
+}
+
+/*?Efecto hover en los enlaces*/
+
+header ul li:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+
+
+
+
+/*!main*/
+
+.welcome {
+
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin: 20px;
+}
+
+
+
+.introduccion {
+    background-image: url("../img/espacio_estrellas2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.introduccion p {
+    width: 80%;
+    text-align: center;
+
+}
+
+
+
+.paginas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.paginas div {
+    border: 2px solid black;
+    background-image: url("../img/cielo_estrellas4.png");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 45vw;
+    max-width: 500px;
+    min-width: 200px;
+    padding: 15px;
+    text-align: center;
+}
+
+.paginas div a {
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+.paginas div a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 1px;
+}
+
+.paginas div img {
+    width: 100%;
+
+}
+
+
+
+/*!Body*/
+
+
+/*!footer*/
+
+footer{
+    background-image: url(../img/espacio_estrellas2.png);
+    background-size: cover;
+    font-size: 15px;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_marca{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+body {
+    background-image: url(../img/planeta_anillo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/**sobre nosotros*/
+
+.main_nosotros {
+    display: flex;
+    justify-content: center;
+}
+
+.info_nosotros {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.info_nosotros div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.info_nosotros div img {
+    max-height: 350vw;
+    background-image: url("../img/cielo_estrellas5.png");
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 15px;
+}
+
+.info_nosotros div p {
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+
+}
+
+.info_izquierda {
+    text-align: left;
+}
+
+.info_derecha {
+    text-align: right;
+}
+
+
+/**productos*/
+
+.main_prod {
+    display: flex;
+    margin-top: 20px;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.intro_prod {
+    font-size: 30px;
+    width: 80%;
+
+}
+
+.producto {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.carousel-inner {
+    max-width: 1080px;
+    width: 100%;
+}
+
+.carousel-caption h5{
+    font-size: 40px;
+}
+
+.carousel-caption p{
+    font-size: 20px;
+}
+
+/**servicios*/
+
+.info_servicios {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.info_servicios section {
+    width: 60%;
+}
+
+.info_servicios section h2 {
+    font-size: 40px;
+    margin: 20px;
+}
+
+.info_servicios section p {
+    font-size: 40px;
+    margin: 20px;
+}
+
+/*!media*/
+
+
+@media (max-width: 991px) {
+    .paginas {
+        grid-template-columns: 1fr;
+    }
+
+    .introduccion p {
+        width: 90%;
+        font-size: 45px;
+    }
+
+}
