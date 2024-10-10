@@ -3,6 +3,19 @@
     margin: 0;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding-bottom: 30px;
+}
+
 /*?estilo de los enlaces*/
 a {
     text-decoration: none;
@@ -181,8 +194,9 @@ footer{
     font-size: 15px;
     color: white;
     padding: 30px;
-    display: flex;
-    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    position: relative
 }
 
 .footer_marca{
