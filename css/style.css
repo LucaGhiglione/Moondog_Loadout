@@ -194,9 +194,10 @@ footer{
     font-size: 15px;
     color: white;
     padding: 30px;
+    margin-top: 15px;
     text-align: center;
     width: 100%;
-    position: relative
+    position: relative;
 }
 
 .footer_marca{
