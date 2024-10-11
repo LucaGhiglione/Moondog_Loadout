@@ -248,9 +248,7 @@ body {
 
 .info_nosotros div p {
     color: white;
-    font-size: 40px;
     padding: 20px;
-
 }
 
 .info_izquierda {
@@ -316,16 +314,27 @@ body {
 }
 
 .info_servicios section h2 {
-    font-size: 40px;
     margin: 20px;
 }
 
 .info_servicios section p {
-    font-size: 40px;
     margin: 20px;
 }
 
 /*!media*/
+
+@media (min-width: 992px) {
+    h2{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+    p{
+        font-size: 30px;
+    }
+}
 
 
 @media (max-width: 991px) {
@@ -335,7 +344,20 @@ body {
 
     .introduccion p {
         width: 90%;
-        font-size: 45px;
+}
+
+    h2{
+        font-size: 20px;
     }
 
+    h3{
+        font-size: 20px;
+    }
+    p{
+        font-size: 20px;
+    }
+
+    .info_nosotros div img{
+        display: none;
+    }
 }
