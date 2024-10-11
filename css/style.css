@@ -337,6 +337,7 @@ body {
 }
 
 
+
 @media (max-width: 991px) {
     .paginas {
         grid-template-columns: 1fr;
@@ -344,6 +345,10 @@ body {
 
     .introduccion p {
         width: 90%;
+}
+
+.info_servicios section {
+    width: 85%;
 }
 
     h2{
