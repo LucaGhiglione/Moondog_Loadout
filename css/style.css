@@ -9,6 +9,7 @@ html, body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    font-family: "nasalization";
 }
 
 main {
@@ -16,8 +17,13 @@ main {
     padding-bottom: 30px;
 }
 
+@font-face{
+    font-family:"nasalization";
+    src:url("../font/nasalization.otf")
+}
+
 /*?estilo de los enlaces*/
-a {
+a, p, h1, h2, h5 {
     text-decoration: none;
     color: white !important;
     text-shadow:
@@ -26,39 +32,6 @@ a {
         -1px 1px 0 black,
         1px 1px 0 black;
 }
-
-p {
-    text-shadow:
-        -1px -1px 0 black,
-        1px -1px 0 black,
-        -1px 1px 0 black,
-        1px 1px 0 black;
-}
-
-h1 {
-    text-shadow:
-        -1px -1px 0 black,
-        1px -1px 0 black,
-        -1px 1px 0 black,
-        1px 1px 0 black;
-}
-
-h2 {
-    text-shadow:
-        -1px -1px 0 black,
-        1px -1px 0 black,
-        -1px 1px 0 black,
-        1px 1px 0 black;
-}
-
-h5 {
-    text-shadow:
-        -1px -1px 0 black,
-        1px -1px 0 black,
-        -1px 1px 0 black,
-        1px 1px 0 black;
-}
-
 
 
 /*!header*/
@@ -84,28 +57,35 @@ h5 {
 
 /*?Estilos para los elementos de la lista*/
 
-header nav ul {
+header div ul{
     display: flex;
     list-style: none;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     flex-wrap: wrap;
+    width: 100%;
+}
+
+.navbar-brand{
+    font-size: 40px;
+    text-shadow: 0px 0px 11px rgba(255,255,255,1);
 }
 
 /*?Estilos para los enlaces de la listas*/
 
-header ul li a {
-    color: rgb(255, 255, 255);
-    font-size: 60px;
-    color: white;
-
+.nav-link{
+    font-size: 30px;
 }
 
 /*?Efecto hover en los enlaces*/
-
-header ul li:hover {
-    text-decoration: underline;
-    text-decoration-color: white;
+.nav-item:hover .nav-link {
+    text-shadow: 
+        0 0 1px black,
+        0 0 5px rgba(255, 255, 255, 0.8),
+        0 0 10px rgba(255, 255, 255, 0.6),
+        0 0 15px rgba(255, 255, 255, 0.4),
+        0 0 20px rgba(255, 255, 255, 0.2);
+    transition: text-shadow 0.5s;
 }
 
 
@@ -171,9 +151,12 @@ header ul li:hover {
 }
 
 .paginas div a:hover {
-    text-decoration: underline;
-    text-decoration-color: white;
-    text-decoration-thickness: 1px;
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8),
+        0 0 10px rgba(255, 255, 255, 0.6),
+        0 0 15px rgba(255, 255, 255, 0.4),
+        0 0 20px rgba(255, 255, 255, 0.2);
+        transition: 0.5s;
 }
 
 .paginas div img {
@@ -324,18 +307,10 @@ body {
 /*!media*/
 
 @media (min-width: 992px) {
-    h2{
-        font-size: 30px;
-    }
-
-    h3{
-        font-size: 30px;
-    }
-    p{
+    h2, h3, p {
         font-size: 30px;
     }
 }
-
 
 
 @media (max-width: 991px) {
@@ -345,24 +320,26 @@ body {
 
     .introduccion p {
         width: 90%;
-}
+    }
 
-.info_servicios section {
-    width: 85%;
-}
+    .info_servicios section {
+        width: 85%;
+    }
 
-    h2{
+    h2, h3, p {
         font-size: 20px;
     }
 
-    h3{
-        font-size: 20px;
-    }
-    p{
-        font-size: 20px;
-    }
-
-    .info_nosotros div img{
+    .info_nosotros div img {
         display: none;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .nav-item {
+        font-size: 20px;
+        padding-left: 20px;
     }
 }
