@@ -1,26 +1,31 @@
-/* Estilos del footer */
 footer {
     background-image: url(../img/espacio_estrellas2.png);
     background-size: cover;
-    font-size: 15px;
-    color: white;
     padding: 30px;
     margin-top: 15px;
-    text-align: center;
+    text-align:left;
     width: 100%;
     position: relative;
+    .footer_marca {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        h2{
+            font-size: 40px;
+            margin-left: 10px;
+        }
+    }
+    p{
+        font-size: 25px;
+    }
+    .footer_info{
+        p{
+            font-size: 15px;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
 }
 
-.footer_marca {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
-body {
-    background-image: url(../img/planeta_anillo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
