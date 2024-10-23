@@ -1,0 +1,37 @@
+/* Media Queries */
+@media (min-width: 992px) {
+    h2, h3, p {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    .paginas {
+        grid-template-columns: 1fr;
+    }
+
+    .introduccion p {
+        width: 90%;
+    }
+
+    .info_servicios section {
+        width: 85%;
+    }
+
+    h2, h3, p {
+        font-size: 20px;
+    }
+
+    .info_nosotros div img {
+        display: none;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .nav-item {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+}
