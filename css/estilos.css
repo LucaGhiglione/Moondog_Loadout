@@ -58,10 +58,12 @@ header nav div div ul {
   text-shadow: 0px 0px 11px white; }
 
 .nav-link {
-  font-size: 40px; }
+  font-size: 40px;
+  transition: text-shadow 0.5s,  transform 0.5s, scale 0.5s; }
   .nav-link:hover {
-    text-shadow: 0 0 1px black, 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.2);
-    transition: text-shadow 0.5s; }
+    text-shadow: 0 0 1px black, 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4), 0 0 40px rgba(255, 255, 255, 0.438);
+    transform: translateY(-5px) scale(1.1);
+    transition: text-shadow 0.5s,  transform 0.5s, scale 0.5s; }
 
 /* Secciones principales */
 .welcome {
@@ -100,12 +102,6 @@ header nav div div ul {
     min-width: 200px;
     padding: 15px;
     text-align: center; }
-    .paginas div a {
-      text-decoration: none;
-      font-size: 30px; }
-      .paginas div a:hover {
-        text-shadow: 0 0 1px black, 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.2);
-        transition: 0.5s; }
     .paginas div img {
       width: 100%; }
 

@@ -32,13 +32,15 @@ header{
 
 .nav-link{
     font-size: 40px;
+    transition: text-shadow 0.5s,  transform 0.5s, scale 0.5s;
     &:hover{
         text-shadow:
         0 0 1px black,
         0 0 5px rgba(255, 255, 255, 0.8),
         0 0 10px rgba(255, 255, 255, 0.6),
         0 0 15px rgba(255, 255, 255, 0.4),
-        0 0 20px rgba(255, 255, 255, 0.2);
-        transition: text-shadow 0.5s;
+        0 0 40px rgba(255, 255, 255, 0.438);
+        transform: translateY(-5px) scale(1.1);
+        transition: text-shadow 0.5s,  transform 0.5s, scale 0.5s;
     }
 }
