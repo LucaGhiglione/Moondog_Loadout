@@ -192,6 +192,7 @@ footer {
   footer .footer_marca {
     display: flex;
     flex-direction: row;
+    justify-items: left;
     align-items: center; }
     footer .footer_marca h2 {
       font-size: 40px;
@@ -214,6 +215,8 @@ footer {
     font-size: 20px; }
   .info_nosotros div img {
     display: none; }
+  .logo {
+    width: 60px; }
   .navbar-brand {
     font-size: 20px; }
   .nav-item {
@@ -226,7 +229,15 @@ footer {
     align-items: center; }
     .contacto .intro_contacto {
       width: 75%;
-      text-align: center; } }
+      text-align: center; }
+  footer .footer_marca .logo {
+    width: 60px; }
+  footer .footer_marca h2 {
+    font-size: 25px; }
+  footer p {
+    font-size: 15px; }
+  footer div p {
+    font-size: 15px; } }
 
 @media (max-width: 1360px) {
   .nav-link {

@@ -9,6 +9,7 @@ footer {
     .footer_marca {
         display: flex;
         flex-direction: row;
+        justify-items: left;
         align-items: center;
         h2{
             font-size: 40px;

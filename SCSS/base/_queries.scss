@@ -19,6 +19,10 @@
         display: none;
     }
 
+    .logo{
+        width: 60px;
+    }
+
     .navbar-brand {
         font-size: 20px;
     }
@@ -41,7 +45,24 @@
         }
     }
 
-
+    footer{
+        .footer_marca{
+            .logo{
+                width: 60px;
+            }
+            h2{
+                font-size: 25px;
+            }
+        }
+        p{
+            font-size: 15px;
+        }
+        div{
+            p{
+                font-size: 15px;
+            }
+        }
+    }
 }
 
 @media(max-width:1360px){
